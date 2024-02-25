@@ -9,7 +9,7 @@ const SettingsScreen: FC<SettingScreenProps> = (props) => {
       <NativeSafeAreaView>
         <View>
             <Text>This is the settings screen</Text>
-            <Button title={'Go to payment'} onPress={() => { navigate('payment', { intention: 'airtime', paymentRef: '2024XXXZDEWW' }) }} />
+            <Button title={'Go to payment'} onPress={() => { navigate('Payment', { intention: 'airtime', paymentRef: '2024XXXZDEWW' }) }} />
         </View>
       </NativeSafeAreaView>
 

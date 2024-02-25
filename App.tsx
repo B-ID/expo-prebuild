@@ -7,7 +7,7 @@ const App: FC = () => {
   return (
       <>
           <StatusBar style={'auto'} />
-        <Navigation />
+         <Navigation />
       </>
   )
 }

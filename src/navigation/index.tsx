@@ -7,18 +7,17 @@ import SettingsScreen from '@screens/settings'
 import PaymentScreen from '@screens/payment'
 import OrderScreen from '@screens/order'
 
-// @ts-expect-error RootStackParamList does not extend type ParamListBase
 const { Screen, Navigator } = createNativeStackNavigator<RootStackParamList>()
 const Navigation: FC = () => {
   return (
         <NavigationContainer>
             <Navigator screenOptions={{
               headerShown: false
-            }} initialRouteName={'home'}>
-                <Screen name={'home'} component={HomeScreen} />
-                <Screen name={'settings'} component={SettingsScreen} />
-                <Screen name={'payment'} component={PaymentScreen} />
-                <Screen name={'order'} component={OrderScreen} />
+            }} initialRouteName={'Home'}>
+                <Screen name={'Home'} component={HomeScreen} />
+                <Screen name={'Settings'} component={SettingsScreen} />
+                <Screen name={'Payment'} component={PaymentScreen} />
+                <Screen name={'Order'} component={OrderScreen} />
             </Navigator>
         </NavigationContainer>
   )
